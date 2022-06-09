@@ -4,10 +4,16 @@ public class InsertionSort {
         for(int i=1; i<arr.length; i++){     //I am assuming that my first element is already sorted so I am starting from second index
             int currentElement = arr[i];     //created an integer which holds the values of index next or my sorted element
             int j= i-1;                      //this is indicating the index of my sorted element
-            while(j>=0 && arr[j]>currentElement){       //loop runs until it
+          //loop runs backwards until it reaches 0 index and element of jth index is grater than current element
+            while(j>=0 && arr[j]>currentElement){
+                //now storing the jth element in the j+1th index
                 arr[j+1]=arr[j];
+                //and decrementing the same thing backwards
                 j--;
-            }arr[j+1]=currentElement;
+                //loop ends
+            }
+            //and the current element will be stored in j+1th column
+            arr[j+1]= currentElement;
         }
     }
     public static void printArr(int[]arr){
