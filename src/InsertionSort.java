@@ -23,6 +23,7 @@ public class InsertionSort {
         }
         System.out.println();
     }
+    //confirming the algorithm
     public static void main(String[] args) {
         int arr[]= {2,3,1,39,20,10,33};
         printArr(arr);
