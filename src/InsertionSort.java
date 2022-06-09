@@ -12,7 +12,7 @@ public class InsertionSort {
                 j--;
                 //loop ends
             }
-            //and the current element will be stored in j+1th column
+            //and the current element that is stored in temporary int will be stored in j+1th index
             arr[j+1]= currentElement;
         }
     }
