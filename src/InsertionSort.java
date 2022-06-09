@@ -1,7 +1,27 @@
 public class InsertionSort {
     //creating a method to sort an array.
-
+    public static void insertionSort(int []arr){
+        for(int i=1; i<arr.length; i++){     //I am assuming that my first element is already sorted so I am starting from second index
+            int currentElement = arr[i];     //created an integer which holds the values of index next or my sorted element
+            int j= i-1;                      //this is indicating the index of my sorted element
+            while(j>=0 && arr[j]>currentElement){       //loop runs until it
+                arr[j+1]=arr[j];
+                j--;
+            }arr[j+1]=currentElement;
+        }
+    }
+    public static void printArr(int[]arr){
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+ " ");
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
+        int arr[]= {2,3,1,39,20,10,33};
+        printArr(arr);
+        insertionSort(arr);
+        printArr(arr);
+
 
     }
 }
