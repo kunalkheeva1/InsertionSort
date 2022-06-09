@@ -16,6 +16,7 @@ public class InsertionSort {
             arr[j+1]= currentElement;
         }
     }
+    //Now creating a method to print the array
     public static void printArr(int[]arr){
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i]+ " ");
